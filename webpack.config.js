@@ -8,8 +8,8 @@ module.exports = {
 
     //This property defines the file path and the file name which will be used for deploying the bundled file
     output: {
-        path: path.join(__dirname, '/dist'),
-        filename: 'bundle.js'
+        path: path.resolve(__dirname, '/dist'),
+        filename: ["name"].js,
     },
     module: {
         rules: [{ test: /\.scss$/, use: 'raw-loader' }],
